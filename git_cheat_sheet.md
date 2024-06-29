@@ -123,3 +123,31 @@ It includes basic Git commands to help you get started, as well as more advanced
 | `git push <remote> --force`   | Forces the git push even if it results in a non-fast-forward merge. Do not use the --force flag unless you’re absolutely sure you know what you’re doing. |
 | `git push <remote> --all`     | Push all of your local branches to the specified remote.                                                         |
 | `git push <remote> --tags`    | Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo. |
+
+
+##### <u>GIT STASH</u>
+Note: Git stash allows you to temporarily save edits you've made to your working copy so you can
+return to your work later. Stashing is especially useful when you are not yet ready to commit
+changes you've done, but would like to revisit them at a later time. 
+
+| COMMAND                     | DESCRIPTION                                                                                                      |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------|
+| `git stash`   | Saving staged and unstaged changes to stash for a later use  |
+| `git stash -u`     | Stashing staged, unstaged and untracked files as well                                                         |
+| `git stash --all`    | Stashing everything (including ignored files) |
+| `git stash pop`   | Reapply previously stashed changes and empty the stash  |
+| `git stash apply`     | Reapply previously stashed changes and keep the stash                                                         |
+| `git stash drop`    | Dropping changes in the stash |
+| `git diff`     | Show uncommitted changes since the last commi;                                                         |
+| `git diff <id_1> <id_2>`    | Show the differences between two commits (should provide the commit IDs) |
+
+
+#### <u>SETTING AN UPSTREAM BRANCH<u>
+
+| COMMAND                     | DESCRIPTION                                                                                                      |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------|
+| `git push --set-upstream origin <branch_name>`   | This command is used to set the upstream (tracking) branch for your current branch. This essentially tells Git which remote branch your local branch should push to and pull from by default. This is especially useful when you're working with branches that track remote branches in a collaborative environment.  |
+| `git branch -vv`     | To check which upstream branch is set for your current branch                                                         |
+| `git branch --set-upstream-to=origin/<branch_name>`    | Setting the upstream branch for an existing branch |
+
+
