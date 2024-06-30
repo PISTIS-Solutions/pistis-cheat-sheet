@@ -23,6 +23,7 @@ Group of one or more physical volumes
 #LV - logical volume
 Entity that contains inform­ation, store on physical volumes, grouped within a volume group
 ```
+<br />
 
 ### LVM - commands and components
 | | |
