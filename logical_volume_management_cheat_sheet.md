@@ -40,7 +40,7 @@ Entity that contains inform­ation, store on physical volumes, grouped within a 
 | ---------- | ---------- |
 **/etc/lvm/** | LVM config­uration directory
 **/etc/l­vm/­lvm.conf** | LVM config­uration file
-**/etc/l­vm/­{ar­chi­ve|­backup}** | Backup and archive of LVM config­uration
+**/etc/l­vm/­{ar­chi­ve&#124;backup}** | Backup and archive of LVM config­uration
 **/etc/l­vm/­profile** | A set of selected custom­izable config­uration settings that can be used to achieve certain charac­ter­istics in various enviro­nments or uses. Normally, the name of the profile should reflect that enviro­nment or use. An LVM profile overrides existing config­ura­tion.
 <br />
 
